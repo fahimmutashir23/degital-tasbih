@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASBIH</title>
+
+    <!-- tailwind & daisy cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="">
+    <section class="flex flex-col lg:flex-row gap-4 justify-center items-center h-screen my-12">
+        <!-- cart 1 -->
+        <div class="card w-96 bg-neutral text-neutral-content shadow-gray-500 shadow-md">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">SUBHANALLAH</h2>
+              <p id="subhanallahDisplay" class="text-7xl text-orange-400">0</p>
+              <div class="card-actions justify-end">
+                <button id="subhanallahincrement" 
+                class="btn btn-outline btn-warning rounded-md">
+                INCREMENT
+                </button>
+
+                <button id="subhanallahDecrement" 
+                class="btn btn-outline btn-warning rounded-md">
+                DECREMENT
+                </button>
+              </div>
+            <button id="subhanallhReset"
+              class="btn btn-sm rounded-sm bg-slate-500 border-none text-white">
+              Reset
+            </button>
+            </div>
+          </div>
+        <!-- cart 2 -->
+        <div class="card w-96 bg-neutral text-neutral-content shadow-gray-500 shadow-md">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">ALHAMDULILLAH</h2>
+              <p id="alhamdulillahDisplay" class="text-7xl text-orange-400">0</p>
+              <div class="card-actions justify-end">
+                <button id="alhamdulillahIncrement" class="btn btn-outline btn-warning rounded-md">INCREMENT</button>
+                <button id="alhamdulillahDecrement" class="btn btn-outline btn-warning rounded-md">DECREMENT</button>
+              </div>
+              <button id="alhamdulillahReset"
+              class="btn btn-sm rounded-sm bg-slate-500 border-none text-white">
+              Reset
+            </button>
+            </div>
+          </div>
+        <!-- cart 3 -->
+        <div class="card w-96 bg-neutral text-neutral-content shadow-gray-500 shadow-md">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">ALLAHUAKBAR</h2>
+              <p id="allhakbarDisplay" class=" block text-7xl text-orange-400">0</p>
+              <div class="card-actions justify-end">
+                <button id="allahuakbarIncrement" class="btn btn-outline btn-warning rounded-md">INCREMENT</button>
+                <button id="allahuakbarDecrement" class="btn btn-outline btn-warning rounded-md">DECREMENT</button>
+              </div>
+              <button id="allahuakbarReset"
+              class="btn btn-sm rounded-sm bg-slate-500 border-none text-white">
+              Reset
+            </button>
+            </div>
+          </div>
+    </section>
+    <script src="tasbih.js"></script>
+</body>
+</html>
