@@ -19,14 +19,14 @@ let allhuakbar = 0;
 // subhanallah
 subhanallahIncrement.addEventListener('click', function(){
     if(subhanallah === 33){
-        return alert("your tasbih is complited") 
+        return
     }
     subhanallah += 1
     subhanallahDiaplay.innerText = subhanallah
 })
 subhanallahDecrement.addEventListener('click', function(){
     if(subhanallah === 0){
-        return alert("you can't get negetive value")
+        return
     }
     subhanallah -= 1
     subhanallahDiaplay.innerText = subhanallah
@@ -41,14 +41,14 @@ document.getElementById('subhanallhReset').addEventListener('click', function(){
 // alhamdulillah
 alhamdulillahIncrement.addEventListener('click', function(){
     if(alhamdulillah === 33){
-        return alert("your tasbih is complited") 
+        return
     }
     alhamdulillah += 1
     alhamdulillahDisplay.innerText = alhamdulillah
 })
 alhamdulillahDecrement.addEventListener('click', function(){
     if(alhamdulillah === 0){
-        return alert("you can't get negetive value")
+        return
     }
     alhamdulillah -= 1
     alhamdulillahDisplay.innerText = alhamdulillah
@@ -64,14 +64,14 @@ document.getElementById('alhamdulillahReset').addEventListener('click', function
 
 allahuakbarIncrement.addEventListener('click', function(){
     if(allhuakbar === 34){
-        return alert("your tasbih is complited") 
+        return
     }
     allhuakbar += 1
     allahuakbarDisplay.innerText = allhuakbar
 })
 allahuakbarDecrement.addEventListener('click', function(){
     if(allhuakbar === 0){
-        return alert("you can't get negetive value")
+        return
     }
     allhuakbar -= 1
     allahuakbarDisplay.innerText = allhuakbar
