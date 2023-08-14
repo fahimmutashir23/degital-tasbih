@@ -1,3 +1,4 @@
+
 let subhanallahDiaplay = document.getElementById('subhanallahDisplay');
 let alhamdulillahDisplay = document.getElementById('alhamdulillahDisplay');
 let allahuakbarDisplay = document.getElementById('allhakbarDisplay');
@@ -12,13 +13,27 @@ let allahuakbarDecrement = document.getElementById('allahuakbarDecrement');
 
 
 
+
 let subhanallah = 0;
 let alhamdulillah = 0;
 let allhuakbar = 0;
 
-// subhanallah
+let count = 33;
+
+
+let tasbi3 = document.getElementById('3tasbih')
+tasbi3.addEventListener('click', function(){
+    count = 100
+})
+
+document.getElementById('regularTasbih').addEventListener('click', function(){
+    count = 33
+})
+
+
+        // subhanallah
 subhanallahIncrement.addEventListener('click', function(){
-    if(subhanallah === 33){
+    if(subhanallah === count){
         return
     }
     subhanallah += 1
@@ -40,7 +55,7 @@ document.getElementById('subhanallhReset').addEventListener('click', function(){
 
 // alhamdulillah
 alhamdulillahIncrement.addEventListener('click', function(){
-    if(alhamdulillah === 33){
+    if(alhamdulillah === count){
         return
     }
     alhamdulillah += 1
@@ -63,7 +78,7 @@ document.getElementById('alhamdulillahReset').addEventListener('click', function
 // allahuakbar
 
 allahuakbarIncrement.addEventListener('click', function(){
-    if(allhuakbar === 34){
+    if(allhuakbar === count + 1){
         return
     }
     allhuakbar += 1
