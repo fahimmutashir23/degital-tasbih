@@ -30,11 +30,16 @@ document.getElementById('regularTasbih').addEventListener('click', function(){
     count = 33
 })
 
+let audio = document.getElementById('audio');
+
+function playAudio(){
+    audio.play()
+}
 
         // subhanallah
 subhanallahIncrement.addEventListener('click', function(){
     if(subhanallah === count){
-        return
+        return playAudio();
     }
     subhanallah += 1
     subhanallahDiaplay.innerText = subhanallah
@@ -56,7 +61,7 @@ document.getElementById('subhanallhReset').addEventListener('click', function(){
 // alhamdulillah
 alhamdulillahIncrement.addEventListener('click', function(){
     if(alhamdulillah === count){
-        return
+        return  playAudio();
     }
     alhamdulillah += 1
     alhamdulillahDisplay.innerText = alhamdulillah
@@ -79,7 +84,7 @@ document.getElementById('alhamdulillahReset').addEventListener('click', function
 
 allahuakbarIncrement.addEventListener('click', function(){
     if(allhuakbar === count + 1){
-        return
+        return  playAudio();
     }
     allhuakbar += 1
     allahuakbarDisplay.innerText = allhuakbar
